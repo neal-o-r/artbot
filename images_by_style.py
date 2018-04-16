@@ -56,7 +56,8 @@ def download(images):
                 shutil.copyfileobj(response.raw, outfile)
 
         downloaded_images.append(img)
-        dump_metadata(downloaded_images)
+        
+    dump_metadata(downloaded_images)
 
 
 if __name__ == '__main__':
